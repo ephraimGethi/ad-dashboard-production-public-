@@ -1,2 +1,27 @@
 @import "tailwindcss";
 
+.test{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.test h2{
+    border: 1px solid red;
+    width: 200px;
+    height: 120px;
+    border-radius: 20px;
+    padding: 20px;
+}
+.test .test-right{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    border: 1px solid red;
+    border-radius: 20px;
+    padding: 20px;
+}
+.test img{
+    width: 150px;
+    border-radius: 20px 70px 20px 80px;
+}

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Search } from "lucide-react";
-
+import backprofile from "../../assets/background_banner.jpg"
 const userData = [
 	{ id: 1, name: "Jonah Kiptoo", email: "jonah@gmail.com", role: "Customer", status: "Active" },
 	{ id: 2, name: "Ephraim Gethi", email: "ephraimgethi@gmail.com", role: "Admin", status: "Active" },
@@ -31,6 +31,15 @@ const UsersTable = () => {
 			animate={{ opacity: 1, y: 0 }}
 			transition={{ delay: 0.2 }}
 		>
+			<div className="test">
+					<h2>Hello Ephraim</h2>
+					<h2>In future Consider Integrating this app with django</h2>
+					<div className="test-right">
+						<h1>Am doing great just a few hustles here an there</h1>
+						<h3>You should consider visiting the us very soon ephraim</h3>
+					</div>
+					<img src={backprofile} alt="" />
+			</div>
 			<div className='flex justify-between items-center mb-6'>
 				<h2 className='text-xl font-semibold text-gray-100'>Users</h2>
 				<div className='relative'>
