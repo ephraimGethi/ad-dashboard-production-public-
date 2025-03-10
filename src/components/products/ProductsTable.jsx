@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Edit, Search, Trash2 } from "lucide-react";
 import { useState } from "react";
+import logo from "../../assets/logo.jpg"
 
 const PRODUCT_DATA = [
 	{ id: 1, name: "Wireless Earbuds", category: "Electronics", price: 590, stock: 143, sales: 1200 },
@@ -80,7 +81,7 @@ const ProductsTable = () => {
 							>
 								<td className='px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-100 flex gap-2 items-center'>
 									<img
-										src='src/assets/react.svg'
+										src={logo}
 										className='size-10 rounded-full'
 									/>
 									{product.name}
